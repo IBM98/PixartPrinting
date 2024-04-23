@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove External Round Brackets</title>
+    <script src="../Scripts/script.js"></script>
+    <script src="../Scripts/scriptBrackets.js"></script>
+
+</head>
+<body>
+    <h1>Remove External Round Brackets</h1>
+    <p>Enter one string per row in the table below. Click the button to remove external round brackets from each string.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Input String</th>
+                <th>Output String</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td><input type="text" id="input1"></td>
+                <td><pre id="output1"></pre></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button onclick="addRow()">Add Row</button>
+    <button onclick="removeBrackets()">Remove Brackets</button>
+
+
+    <form action="generate_pdf2.php" method="post" >
+        <label for="text">Text for PDF:</label>
+        <input type="text" id="textPdf" name="text" required><br>
+        <button type="submit">Generate PDF</button>
+    </form>
+
+  
+</body>
+</html>
